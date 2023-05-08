@@ -1,36 +1,39 @@
 html {
   font-size: 10px;
-  background: url("/guitar-bg.png") center;
+  background: url("/guitar-background.png") center;
   background-size: cover;
+  width: 110% 110%;
+  height: 80% 80%;
+  background-position: center;
 }
 
 body,
 html {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Arvo", serif;
 }
 
 h1 {
   text-align: center;
-  font-family: "Shadows Into Light", cursive;
-  color: #ffc600;
+  font-family: "Arvo", serif;
+  color: #eb8408;
   font-size: 6rem;
-  text-shadow: 0 0 1rem black;
-  margin: 2rem;
+  text-shadow: 0 0 1rem rgb(255, 233, 186);
+  margin: 3rem;
 }
 
 .keys {
   display: flex;
   flex-wrap: wrap;
   min-height: 100vh;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  padding-bottom: 12rem;
+  padding-top: 20rem;
 }
 
 .key {
-  border: 0.4rem solid black;
+  border: 0.4rem solid rgb(15, 13, 33);
   border-radius: 0.5rem;
   margin: 1rem;
   font-size: 1.5rem;
@@ -39,24 +42,31 @@ h1 {
   width: 10rem;
   text-align: center;
   color: white;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(30, 27, 57, 0.253);
   text-shadow: 0 0 0.5rem black;
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: #eb8408;
+  box-shadow: 0 0 1rem #eb8408;
 }
 
 kbd {
   display: block;
   font-size: 4rem;
+  font-family: "Arvo", serif;
 }
 
 .sound {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  color: #ffc600;
+  color: #eb8408;
+}
+
+@media only screen and (max-width: 768px) {
+  .keys {
+    padding-top: 6rem;
+  }
 }
